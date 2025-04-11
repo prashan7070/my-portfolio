@@ -395,3 +395,36 @@ body {
     color: #ffffff;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    #header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    #home, #about {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .home-img img, .about-img img {
+        margin-top: 20px;
+    }
+
+
+    .Services-Grid, .projects-Grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+}
+
