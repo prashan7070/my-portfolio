@@ -367,3 +367,31 @@ body {
 .btn-submit:hover {
     background: #0095b6;
 }
+
+
+/* Footer Styles */
+#footer {
+    padding: 40px 10%;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #2d2d2d;
+}
+
+.footer-content p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.footer-email a {
+    color: #00b4d8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-email a:hover {
+    color: #ffffff;
+}
+
