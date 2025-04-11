@@ -44,7 +44,6 @@ body {
     color: #00b4d8;
 }
 
-
 /* Home Section Styles */
 #home {
     height: 100vh;
@@ -113,6 +112,55 @@ body {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 180, 216, 0.5);
 }
+
+/* About Section Styles */
+#about {
+    padding: 100px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    min-height: 80vh;
+}
+
+.about-img {
+    display: flex;
+    align-items: flex-end; /* Ensure the image aligns to the bottom within its container */
+    padding-bottom: 50px; /* Add some padding at the bottom for spacing */
+}
+
+.about-img img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 180, 216, 0.5);
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.Highlight {
+    color: #00b4d8;
+}
+
+.about-content p {
+    font-size: 16px;
+    margin: 15px 0;
+    max-width: 500px;
+}
+
+.about-content .btn {
+    margin-top: 60px;
+}
+
 
 
 /* Education Section Styles */
@@ -246,7 +294,6 @@ body {
     background: #0095b6;
 }
 
-
 /* Projects Section Styles */
 #Projects {
     padding: 80px 10%;
@@ -368,7 +415,6 @@ body {
     background: #0095b6;
 }
 
-
 /* Footer Styles */
 #footer {
     padding: 40px 10%;
@@ -394,6 +440,7 @@ body {
 .footer-email a:hover {
     color: #ffffff;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -427,4 +474,3 @@ body {
     }
 
 }
-
