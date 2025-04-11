@@ -113,3 +113,46 @@ body {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 180, 216, 0.5);
 }
+
+
+/* Education Section Styles */
+#education {
+    padding: 80px 10%;
+    background-color: #1a1a1a;
+}
+
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.education-item {
+    background: #2d2d2d;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+    font-size: 20px;
+    color: #00b4d8;
+    margin: 10px 0;
+}
+
+.education-item p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #00b4d8;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+}
