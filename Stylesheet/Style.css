@@ -10,3 +10,36 @@ body {
     color: #ffffff;
     line-height: 1.6;
 }
+
+/* Header Styles */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00b4d8;
+}
