@@ -313,3 +313,57 @@ body {
 .Project-layer a:hover {
     color: #ffffff;
 }
+
+/* Contact Section Styles */
+#Contact {
+    padding: 80px 10%;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.contact-intro {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 12px;
+    background: #2d2d2d;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.form-textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.btn-submit {
+    padding: 12px 30px;
+    background: #00b4d8;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #0095b6;
+}
