@@ -156,3 +156,93 @@ body {
     font-size: 14px;
     margin-top: 10px;
 }
+
+/* Skills Section Styles */
+#skills {
+    padding: 80px 10%;
+    background-color: #1a1a1a;
+}
+
+.skills-Category {
+    margin-bottom: 40px;
+}
+
+.sub-section-title {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.sub-section-highlight {
+    color: #00b4d8;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skills-item img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Services Section Styles */
+#Services {
+    padding: 80px 10%;
+    background-color: #1a1a1a;
+}
+
+.Services-Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.Services-card {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.Services-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 36px;
+    color: #00b4d8;
+    margin-bottom: 15px;
+}
+
+.service-title {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.Services-card p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.btn-read-more {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #00b4d8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.btn-read-more:hover {
+    background: #0095b6;
+}
+
