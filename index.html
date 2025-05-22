@@ -374,7 +374,7 @@
                           data-aos-easing="ease-out-cubic"
                           data-aos-duration="2000" name="message" placeholder="Leave your message here..." class="form-textarea"></textarea>
 
-                <button id="send-btn" data-aos="flip-right"
+                <button id="send" data-aos="flip-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="3000" type="submit" class="btn-submit">Send Message</button>
 
@@ -424,7 +424,7 @@
 
         <script>
 
-            $('#send-btn').on('click', function () {
+            $('#send').on('click', function () {
                 const phone = '94774072519';
 
                 const fname = $('#fname').val().trim();
