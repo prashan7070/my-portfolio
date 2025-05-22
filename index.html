@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/icon" href="Assets/Images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="Stylesheet/Style.css" rel="stylesheet">
     <title>Portfolio.</title>
 
@@ -46,27 +47,32 @@
 
             <!--    Left Side    -->
 
-            <div class="home-content">
-                <h3>Hello It's Me</h3>
-                <h2>Prashan Anupama</h2>
-                <h3>And I'm a Full Stack Software Engineer</h3>
+            <div class="home-content" data-aos="flip-left" data-aos-duration="3000">
+                <h3 data-aos="fade-up " data-aos-duration="3000"
+                    data-aos-anchor-placement="top-center">Hello It's Me</h3>
+                <h2 data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-anchor-placement="top-center">Prashan Anupama</h2>
+                <h3 data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-anchor-placement="top-center">And I'm a Full Stack Software Engineer</h3>
                 <p>"As a passionate full-stack developer, I focus on building
                     responsive websites and modern web applications
                     with a better user experience and innovative design."</p>
 
-                <div class="social-icons">
-                    <a href="https://github.com/prashan7070"><i class='bx bxl-github' ></i></a>
-                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                <div class="social-icons" data-aos="fade-right">
+                    <a  data-aos="fade-right" href="https://github.com/prashan7070"><i class='bx bxl-github' ></i></a>
+                    <a  data-aos="fade-right" href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a   data-aos="fade-left"href="#"><i class='bx bxl-instagram'></i></a>
+                    <a  data-aos="fade-left" href="#"><i class='bx bxl-twitter'></i></a>
 
                 </div>
-                <a href="#" class="btn">Connect with me</a>
+                <a  data-aos="fade-right" href="#" class="btn">Connect with me</a>
             </div>
 
             <!--    Right Side    -->
 
-            <div class="home-img">
+            <div class="home-img"   data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000">
                 <img src="Assets/Images/WhatsApp%20Image%202025-01-17%20at%2000.06.39%20(1).jpeg" alt="Profile-Image">
             </div>
 
@@ -79,17 +85,19 @@
 
             <!--    Left Side    -->
 
-            <div class="about-img">
+            <div class="about-img"  data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000">
                 <img src="Assets/Images/WhatsApp%20Image%202025-01-17%20at%2000.06.39%20(1).jpeg" alt="Profile-Image">
             </div>
 
             <!--    Left Side    -->
 
-            <div class="about-content">
+            <div class="about-content" data-aos="flip-right" data-aos-duration="2000">
                 <h2 class="section-title">What Drives <span class="Highlight">Me?</span> </h2>
                 <p>In the bustling city of Galle, Sri Lanka, I discovered my passion for solving real-world problems through technology. Fueled by curiosity and creativity, I embarked on a journey to turn ideas into impactful solutions.</p>
                 <p>My goal is to continuously challenge myself and contribute to shaping a smarter and more connected future.</p>
-                <a href="#" class="btn">See More...</a>
+                <a data-aos="zoom-in-right" data-aos-duration="3000" href="#" class="btn">See More...</a>
             </div>
 
 
@@ -104,26 +112,66 @@
 
             <h2 class="section-title">Education Journey</h2>
 
-            <div class="education-item">
+            <div class="education-item" data-aos="fade-right" data-aos-duration="2000">
                 <div class="date"><i class='bx bxs-calendar'></i>2024 - Present</div>
                 <h3>Institute of Software Engineering</h3>
                 <p>"After completing my Advanced Levels, I am currently pursuing the GDSE program at the Institute of Java and Software Engineering."</p>
                 <div class="tag">HND</div>
             </div><br>
 
-            <div class="education-item">
+            <div class="education-item"  data-aos="fade-left" data-aos-duration="2000">
                 <div class="date"><i class='bx bxs-calendar'></i>2018 - 2020</div>
                 <h3>Richmond College - Galle</h3>
                 <div class="tag">Advanced Level</div>
             </div><br>
 
-            <div class="education-item">
+            <div class="education-item"  data-aos="fade-right" data-aos-duration="2000">
                 <div class="date"><i class='bx bxs-calendar'></i>2006 - 2017</div>
                 <h3>Wanduramba Central College - Galle</h3>
                 <div class="tag">Ordinary Level</div>
             </div><br>
 
         </section>
+
+
+        <!-- ------------------ Assignments -------------------- -->
+
+        <section id="Assignments">
+            <h2 class="section-title">My <span class="Highlight">Assignments</span></h2>
+            <div class="assignments-Grid">
+                <div class="assignments-row"  data-aos="flip-left" data-aos-duration="2000">
+                    <div class="assignment-layer">
+                        <h3 class="assignment-title">ITS-1119-assignment-09</h3>
+                        <p>A responsive portfolio website showcasing my skills, projects, </p>
+                        <a href="https://github.com/prashan7070/My-Portfolio" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="assignments-row"  data-aos="flip-right" data-aos-duration="2000">
+                    <div class="assignment-layer">
+                        <h3 class="assignment-title">ITS-1099-Assignment 10</h3>
+                        <p>A system to manage gym memberships, including .</p>
+                        <a href="https://github.com/prashan7070/Gym_Member_Management_System" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="assignments-row"  data-aos="flip-left" data-aos-duration="2000">
+                    <div class="assignment-layer">
+                        <h3 class="assignment-title">ITS-1099-Assignment 11</h3>
+                        <p>An interactive Tic-Tac-Toe game with options to .</p>
+                        <a href="https://github.com/prashan7070/Tic-Tac-Toe" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="assignments-row"  data-aos="flip-right" data-aos-duration="2000">
+                    <div class="assignment-layer">
+                        <h3 class="assignment-title">ITS-1099-Assignment 12</h3>
+                        <p>An interactive Tic-Tac-Toe game  responsive design.</p>
+                        <a href="https://github.com/prashan7070/Tic-Tac-Toe" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
 
 
         <!-- ------------------ My Skills -------------------- -->
@@ -136,18 +184,18 @@
             <!--    Frond End    -->
 
             <div class="skills-Category">
-                <h3 class="sub-section-title">Frond-<span class="sub-section-highlight">End </span>Development</h3>
+                <h3 class="sub-section-title" data-aos="zoom-in-right" data-aos-duration="2000">Frond-<span class="sub-section-highlight">End </span>Development</h3>
                 <div class="skills-grid">
 
-                    <div class="skills-item">
+                    <div class="skills-item" data-aos="zoom-in-left" data-aos-duration="000">
                         <img src="Assets/Images/icons8-javascript-50.png" alt="Javascript-logo" class="Javascript-logo">
                     </div>
 
-                    <div class="skills-item">
+                    <div class="skills-item" data-aos="zoom-in-right" data-aos-duration="2000">
                         <img src="Assets/Images/icons8-react-50.png" alt="React-logo" class="React-logo">
                     </div>
 
-                    <div class="skills-item">
+                    <div class="skills-item" data-aos="zoom-in-left" data-aos-duration="2000">
                         <img src="Assets/Images/icons8-angular-48.png" alt="Angular-logo" class="Angular-logo">
                     </div>
 
@@ -158,19 +206,19 @@
             <!--    Back End    -->
 
 
-            <div class="skills-Category">
+            <div class="skills-Category" >
                 <h3 class="sub-section-title">Back-<span class="sub-section-highlight">End </span>Development</h3>
                 <div class="skills-grid">
 
-                    <div class="skills-item">
+                    <div class="skills-item" data-aos="zoom-in-right" data-aos-duration="2000">
                         <img src="Assets/Images/icons8-java-50.png" alt="Java-logo" class="Java-logo">
                     </div>
 
-                    <div class="skills-item">
+                    <div class="skills-item" data-aos="zoom-in-right" data-aos-duration="2000">
                         <img src="Assets/Images/icons8-python-50.png" alt="Python-logo" class="Python-logo">
                     </div>
 
-                    <div class="skills-item">
+                    <div class="skills-item" data-aos="zoom-in-right" data-aos-duration="2000">
                         <img src="Assets/Images/icons8-node-js-48.png" alt="Nodejs-logo" class="Nodejs-logo">
                     </div>
 
@@ -185,11 +233,11 @@
                 <h3 class="sub-section-highlight">Database <span class="sub-section-title">Management</span></h3>
                 <div class="skills-grid">
 
-                    <div class="skills-item">
+                    <div class="skills-item" data-aos="zoom-in-right" data-aos-duration="2000">
                         <img src="Assets/Images/icons8-mysql-50.png" alt="MYSQL-logo" class="MYSQL-logo">
                     </div>
 
-                    <div class="skills-item">
+                    <div class="skills-item" data-aos="zoom-in-right" data-aos-duration="2000">
                         <img src="Assets/Images/icons8-mongo-db-50.png" alt="Mongo-logo" class="Mongo-logo">
                     </div>
 
@@ -209,35 +257,55 @@
 
                 <!--    UI / UX Card    -->
 
-                <div class="Services-card">
-                    <div class="service-icon">
+                <div class="Services-card" data-aos="zoom-in-right" data-aos-easing="linear"
+                     data-aos-duration="2500" >
+                    <div class="service-icon" data-aos="zoom-in-right" data-aos-easing="linear"
+                         data-aos-duration="1500">
                         <i class='bx bx-pen'></i>
                     </div>
-                    <h3 class="service-title">UI / UX Designing</h3>
-                    <p>Crafting visually appealing and user-friendly designs to enhance user experiences.</p>
-                    <a href="#" class="btn-read-more">Read More...</a>
+                    <h3 data-aos="zoom-in-right" data-aos-easing="linear"
+                        data-aos-duration="1500" class="service-title">UI / UX Designing</h3>
+                    <p data-aos="zoom-in-right" data-aos-easing="linear"
+                       data-aos-duration="1500">Crafting visually appealing and user-friendly designs to enhance user experiences.</p>
+                    <a data-aos="zoom-in-right" data-aos-easing="linear"
+                       data-aos-duration="1500" href="#" class="btn-read-more">Read More...</a>
                 </div>
 
                 <!--    Web Development Card     -->
 
-                <div class="Services-card">
-                    <div class="service-icon">
+                <div class="Services-card" data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="2500">
+                    <div class="service-icon" data-aos="fade-down"
+                         data-aos-easing="linear"
+                         data-aos-duration="1500">
                         <i class='bx bx-code-alt'></i>
                     </div>
-                    <h3 class="service-title">Web Development</h3>
-                    <p>Building responsive and dynamic websites tailored to your needs, ensuring seamless functionality and design.</p>
-                    <a href="#" class="btn-read-more">Read More...</a>
+                    <h3 data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500" class="service-title">Web Development</h3>
+                    <p data-aos="fade-down"
+                       data-aos-easing="linear"
+                       data-aos-duration="1500">Building responsive and dynamic websites tailored to your needs, ensuring seamless functionality and design.</p>
+                    <a data-aos="fade-down"
+                       data-aos-easing="linear"
+                       data-aos-duration="1500" href="#" class="btn-read-more">Read More...</a>
                 </div>
 
                 <!--    Digital Marketing Card   -->
 
-                <div class="Services-card">
-                    <div class="service-icon">
+                <div class="Services-card" data-aos="zoom-in-left" data-aos-easing="linear"
+                     data-aos-duration="1500">
+                    <div class="service-icon" data-aos="zoom-in-left" data-aos-easing="linear"
+                         data-aos-duration="1500">
                         <i class='bx bx-world'></i>
                     </div>
-                    <h3 class="service-title">Digital Marketing</h3>
-                    <p>Boosting online presence and engagement through targeted strategies and campaigns.</p>
-                    <a href="#" class="btn-read-more">Read More...</a>
+                    <h3 data-aos="zoom-in-left" data-aos-easing="linear"
+                        data-aos-duration="1500" class="service-title">Digital Marketing</h3>
+                    <p data-aos="zoom-in-left" data-aos-easing="linear"
+                       data-aos-duration="1500">Boosting online presence and engagement through targeted strategies and campaigns.</p>
+                    <a data-aos="zoom-in-left" data-aos-easing="linear"
+                       data-aos-duration="1500" href="#" class="btn-read-more">Read More...</a>
                 </div>
 
             </div>
@@ -256,7 +324,7 @@
 
                 <!--    Gym Membership System    -->
 
-                <div class="projects-row">
+                <div class="projects-row" data-aos="flip-right" data-aos-duration="2000">
                     <img src="Assets/Images/gym-image.jpg" alt="gym-image" class="project-image" width="500" height="300">
                     <div class="Project-layer">
                         <h3 class="project-title">Gym Member Management System</h3>
@@ -268,7 +336,7 @@
 
                 <!--   Tic-Tac-Toe Game     -->
 
-                <div class="projects-row">
+                <div class="projects-row" data-aos="flip-left" data-aos-duration="2000">
                     <img src="Assets/Images/tic-tac-toe.jpg" alt="tic-tac-toe" class="project-image" width="500" height="300">
                     <div class="Project-layer">
                         <h3 class="project-title">Tic-Tac-Toe  Game</h3>
@@ -293,18 +361,22 @@
             <form id="contact-form" class="contact-form">
 
                 <div class="form-row">
-                        <input type="text" name="firstName" placeholder="First Name" class="form-input">
-                        <input type="text" name="lastName" placeholder="Last Name" class="form-input">
+                        <input data-aos="fade-left" data-aos-duration="2000" type="text" name="firstName" placeholder="First Name" class="form-input">
+                        <input data-aos="fade-left" data-aos-duration="2000" type="text" name="lastName" placeholder="Last Name" class="form-input">
                 </div>
 
                 <div class="form-row">
-                    <input type="text" name="contactNumber" placeholder="Contact Number" class="form-input">
-                    <input type="email" name="email" placeholder="Email" class="form-input">
+                    <input data-aos="fade-right" data-aos-duration="2000" type="text" name="contactNumber" placeholder="Contact Number" class="form-input">
+                    <input data-aos="fade-right" data-aos-duration="2000" type="email" name="email" placeholder="Email" class="form-input">
                 </div>
 
-                <textarea name="message" placeholder="Leave your message here..." class="form-textarea"></textarea>
+                <textarea data-aos="flip-left"
+                          data-aos-easing="ease-out-cubic"
+                          data-aos-duration="2000" name="message" placeholder="Leave your message here..." class="form-textarea"></textarea>
 
-                <button type="submit" class="btn-submit">Send Message</button>
+                <button data-aos="flip-right"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="3000" type="submit" class="btn-submit">Send Message</button>
 
             </form>
 
@@ -318,27 +390,33 @@
 
             <!--     left side           -->
 
-            <div class="footer-content">
-                <h2 class="section-title">Get in <span class="Highlight">touch&lt;/&gt;</span></h2>
+            <div class="footer-content" data-aos="fade-up"
+                 data-aos-easing="linear"
+                 data-aos-duration="1500">
+                <h2 data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500" class="section-title">Get in <span class="Highlight">touch&lt;/&gt;</span></h2>
                 <p>Reach out for exciting collaborations.I’d love to connect!</p>
                 <p class="footer-email"><a href="mailto:prashan7070@gmail.com">prashan7070@gmail.com</a></p>
             </div>
 
             <!--     right side           -->
 
-            <div class="social-icons">
+            <div class="social-icons" data-aos="zoom-in-down"  data-aos-duration="1500">
 
-                <a href="https://github.com/prashan7070"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a data-aos="zoom-in-down"  data-aos-duration="1500" href="https://github.com/prashan7070"><i class='bx bxl-github' ></i></a>
+                <a data-aos="zoom-in-down"  data-aos-duration="1500" href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a data-aos="zoom-in-down"  data-aos-duration="1500" href="#"><i class='bx bxl-instagram'></i></a>
+                <a data-aos="zoom-in-down"  data-aos-duration="1500" href="#"><i class='bx bxl-twitter'></i></a>
 
             </div>
 
         </footer>
 
-
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
 
 </body>

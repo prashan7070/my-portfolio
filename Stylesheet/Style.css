@@ -442,6 +442,67 @@ body {
 }
 
 
+
+/* Assignments Section Styles */
+#Assignments {
+    padding: 80px 10%;
+    background-color: #1a1a1a;
+}
+
+.assignments-Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.assignments-row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #2d2d2d; /* Added background to make cards visible */
+    padding: 20px; /* Added padding for content spacing */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.assignments-row:hover {
+    transform: translateY(-10px);
+}
+
+.assignment-layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Ensure content has space */
+}
+
+.assignment-title {
+    font-size: 24px;
+    color: #00b4d8;
+    margin-bottom: 10px;
+}
+
+.assignment-layer p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.assignment-layer a {
+    color: #00b4d8;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.assignment-layer a:hover {
+    color: #ffffff;
+}
+
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
 
@@ -471,6 +532,10 @@ body {
 
     .form-row {
         flex-direction: column;
+    }
+
+    .assignments-Grid {
+        grid-template-columns: 1fr;
     }
 
 }
