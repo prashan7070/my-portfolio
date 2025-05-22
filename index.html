@@ -361,20 +361,20 @@
             <form id="contact-form" class="contact-form">
 
                 <div class="form-row">
-                        <input data-aos="fade-left" data-aos-duration="2000" type="text" name="firstName" placeholder="First Name" class="form-input">
-                        <input data-aos="fade-left" data-aos-duration="2000" type="text" name="lastName" placeholder="Last Name" class="form-input">
+                        <input id="fname" data-aos="fade-left" data-aos-duration="2000" type="text" name="firstName" placeholder="First Name" class="form-input">
+                        <input id="lname" data-aos="fade-left" data-aos-duration="2000" type="text" name="lastName" placeholder="Last Name" class="form-input">
                 </div>
 
                 <div class="form-row">
-                    <input data-aos="fade-right" data-aos-duration="2000" type="text" name="contactNumber" placeholder="Contact Number" class="form-input">
+                    <input id="ccontact" data-aos="fade-right" data-aos-duration="2000" type="text" name="contactNumber" placeholder="Contact Number" class="form-input">
                     <input data-aos="fade-right" data-aos-duration="2000" type="email" name="email" placeholder="Email" class="form-input">
                 </div>
 
-                <textarea data-aos="flip-left"
+                <textarea id="massage" data-aos="flip-left"
                           data-aos-easing="ease-out-cubic"
                           data-aos-duration="2000" name="message" placeholder="Leave your message here..." class="form-textarea"></textarea>
 
-                <button data-aos="flip-right"
+                <button id="send-btn" data-aos="flip-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="3000" type="submit" class="btn-submit">Send Message</button>
 
@@ -412,11 +412,44 @@
             </div>
 
         </footer>
-
+        <script src="Assets/jquery-3.7.1.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+
         <script>
             AOS.init();
         </script>
+
+        <script>
+
+            $('#send-btn').on('click', function () {
+                const phone = '94774072519';
+
+                const fname = $('#fname').val().trim();
+                const lname = $('#lname').val().trim();
+                const email = $('#email').val().trim();
+                const contact = $('#ccontact').val().trim();
+                const message = $('#massage').val().trim();
+
+                const fullMessage =` Contact Form Message\n\n` +
+                    `FName: ${fname}\n `+
+                    `LName: ${lname}\n `+
+                `Email: ${email}\n `+
+               ` Contact: ${contact}\n` +
+                `Message: ${message}`;
+
+                const encodedMessage = encodeURIComponent(fullMessage);
+
+                const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+
+                window.open(url, '_blank');
+
+            });
+
+        </script>
+
 
 
 </body>
