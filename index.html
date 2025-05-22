@@ -355,34 +355,25 @@
         <!-- ------------------ Contact Me -------------------- -->
 
         <section id="Contact">
-
             <h2 class="section-title">Contact <span class="Highlight">Me</span></h2>
             <p class="contact-intro">Need assistance? We’re here for you! Complete the form or connect with us through your preferred channel.</p>
 
             <form id="contact-form" class="contact-form">
-
                 <div class="form-row">
-                        <input id="fname" data-aos="fade-left" data-aos-duration="2000" type="text" name="firstName" placeholder="First Name" class="form-input">
-                        <input id="lname" data-aos="fade-left" data-aos-duration="2000" type="text" name="lastName" placeholder="Last Name" class="form-input">
+                    <input id="fname" data-aos="fade-left" data-aos-duration="2000" type="text" name="firstName" placeholder="First Name" class="form-input">
+                    <input id="lname" data-aos="fade-left" data-aos-duration="2000" type="text" name="lastName" placeholder="Last Name" class="form-input">
                 </div>
 
                 <div class="form-row">
                     <input id="ccontact" data-aos="fade-right" data-aos-duration="2000" type="text" name="contactNumber" placeholder="Contact Number" class="form-input">
-                    <input data-aos="fade-right" data-aos-duration="2000" type="email" name="email" placeholder="Email" class="form-input">
+                    <input id="email" data-aos="fade-right" data-aos-duration="2000" type="email" name="email" placeholder="Email" class="form-input">
                 </div>
 
-                <textarea id="massage" data-aos="flip-left"
-                          data-aos-easing="ease-out-cubic"
-                          data-aos-duration="2000" name="message" placeholder="Leave your message here..." class="form-textarea"></textarea>
+                <textarea id="massage" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" name="message" placeholder="Leave your message here..." class="form-textarea"></textarea>
 
-                <button id="send" data-aos="flip-right"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="3000" type="submit" class="btn-submit">Send Message</button>
-
+                <button id="submit" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000" type="submit" class="btn-submit">Send Message</button>
             </form>
-
         </section>
-
 
 
         <!-- ------------------ Footer -------------------- -->
@@ -424,32 +415,32 @@
         </script>
 
         <script>
+            $('#submit').on('click', function (event) {
+                event.preventDefault(); // Prevent default form submission
 
-            $('#send').on('click', function () {
                 const phone = '94774072519';
 
                 const fname = $('#fname').val().trim();
                 const lname = $('#lname').val().trim();
                 const email = $('#email').val().trim();
-                const contact = $('#ccontact').val().trim();
                 const message = $('#massage').val().trim();
+                const contact = $('#ccontact').val().trim();
 
-                const fullMessage =` Contact Form Message\n\n` +
-                    `FName: ${fname}\n `+
-                    `LName: ${lname}\n `+
-                `Email: ${email}\n `+
-               ` Contact: ${contact}\n` +
-                `Message: ${message}`;
+                const fullMessage = `Contact Form Message\n\n` +
+                    `FName: ${fname}\n` +
+                    `LName: ${lname}\n` +
+                    `Email: ${email}\n` +
+                    `Message: ${message}\n` +
+                    `Contact: ${contact}\n`;
 
                 const encodedMessage = encodeURIComponent(fullMessage);
 
                 const url = `https://wa.me/${phone}?text=${encodedMessage}`;
 
                 window.open(url, '_blank');
-
             });
-
         </script>
+
 
 
 
