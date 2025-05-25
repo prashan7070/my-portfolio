@@ -415,8 +415,34 @@
         </script>
 
         <script>
+            // $('#submit').on('click', function (event) {
+            //     event.preventDefault(); 
+
+            //     const phone = '94774072519';
+
+            //     const fname = $('#fname').val().trim();
+            //     const lname = $('#lname').val().trim();
+            //     const email = $('#email').val().trim();
+            //     const message = $('#massage').val().trim();
+            //     const contact = $('#ccontact').val().trim();
+
+            //     const fullMessage = `Contact Form Message\n\n` +
+            //         `FName: ${fname}\n` +
+            //         `LName: ${lname}\n` +
+            //         `Email: ${email}\n` +
+            //         `Message: ${message}\n` +
+            //         `Contact: ${contact}\n`;
+
+            //     const encodedMessage = encodeURIComponent(fullMessage);
+
+            //     const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+
+            //     window.open(url, '_blank');
+            // });
+
+
             $('#submit').on('click', function (event) {
-                event.preventDefault(); // Prevent default form submission
+                event.preventDefault(); 
 
                 const phone = '94774072519';
 
@@ -439,6 +465,10 @@
 
                 window.open(url, '_blank');
             });
+
+
+
+
         </script>
 
 

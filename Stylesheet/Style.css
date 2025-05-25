@@ -125,8 +125,8 @@ body {
 
 .about-img {
     display: flex;
-    align-items: flex-end; /* Ensure the image aligns to the bottom within its container */
-    padding-bottom: 50px; /* Add some padding at the bottom for spacing */
+    align-items: flex-end;
+    padding-bottom: 50px;
 }
 
 .about-img img {
@@ -459,8 +459,8 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    background: #2d2d2d; /* Added background to make cards visible */
-    padding: 20px; /* Added padding for content spacing */
+    background: #2d2d2d;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -475,7 +475,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Ensure content has space */
+    padding: 20px;
 }
 
 .assignment-title {
@@ -506,6 +506,10 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
 
+    .about-img {
+        display: none;
+    }
+
     #header {
         padding: 15px 5%;
     }
@@ -521,7 +525,7 @@ body {
         padding: 50px 5%;
     }
 
-    .home-img img, .about-img img {
+    .home-img img {
         margin-top: 20px;
     }
 
@@ -537,5 +541,7 @@ body {
     .assignments-Grid {
         grid-template-columns: 1fr;
     }
+
+
 
 }
